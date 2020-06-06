@@ -18,15 +18,5 @@ class RecommendActivity : AppCompatActivity() {
             offscreenPageLimit = 2
         }
         tl_home.setupWithViewPager(vp_home)
-
-
-//        bottomNavigationView.setOnNavigationItemSelectedListener {
-//            when(it.itemId){
-//                R.id.menu_home -> main_viewPager.currentItem = 0
-//                R.id.menu_book -> main_viewPager.currentItem = 1
-//                R.id.menu_person -> main_viewPager.currentItem = 2
-//            }
-//            true
-//        }
     }
 }
