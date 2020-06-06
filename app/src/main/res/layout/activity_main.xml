@@ -78,18 +78,18 @@
             android:paddingVertical="13dp"
             android:text="생리통"
             android:textColor="@color/colorDarkBlack"
-            app:layout_constraintBottom_toTopOf="@+id/txt_btn_home_stomach"
+            app:layout_constraintBottom_toTopOf="@+id/txt_btn_home_digestive"
             app:layout_constraintTop_toBottomOf="@+id/txt_btn_home_head" />
 
         <TextView
-            android:id="@+id/txt_btn_home_stomach"
+            android:id="@+id/txt_btn_home_digestive"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginBottom="1dp"
             android:background="@drawable/grey_round_background"
             android:gravity="center"
             android:paddingVertical="13dp"
-            android:text="위"
+            android:text="소화기"
             android:textColor="@color/colorDarkBlack"
             app:layout_constraintBottom_toTopOf="@+id/txt_btn_home_respiratory"
             app:layout_constraintTop_toBottomOf="@+id/txt_btn_home_cramps"
@@ -105,7 +105,7 @@
             android:text="호흡기(목,코)"
             android:textColor="@color/colorDarkBlack"
             app:layout_constraintBottom_toTopOf="@+id/txt_btn_home_etc"
-            app:layout_constraintTop_toBottomOf="@+id/txt_btn_home_stomach"
+            app:layout_constraintTop_toBottomOf="@+id/txt_btn_home_digestive"
             tools:layout_editor_absoluteX="32dp" />
 
         <TextView
