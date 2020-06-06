@@ -11,7 +11,7 @@ import com.mercyteam.mercy.network.RequestToServer
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
-    //val requestToServer = RequestToServer
+    val requestToServer = RequestToServer
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -23,7 +23,7 @@ class LoginActivity : AppCompatActivity() {
                 Toast.makeText(this,"아이디와 비밀번호를 확인하세요", Toast.LENGTH_SHORT).show()
             //빈칸이 아닌 경우 통신함
             else {
-               /* requestToServer.service.requestLogin( //이 함수의 반환 타입은 Call<ResponseLogin>
+                requestToServer.service.requestLogin( //이 함수의 반환 타입은 Call<ResponseLogin>
                     RequestLogin(
                         id = et_id.text.toString(),
                         password = et_pwd.text.toString()
@@ -39,10 +39,8 @@ class LoginActivity : AppCompatActivity() {
                             Toast.makeText(this,"아이디/비밀번호를 확인하세요.", Toast.LENGTH_SHORT).show()
                         }
                     }
-                )*/
+                )
 
-                val intent = Intent(this@LoginActivity, MainActivity::class.java)
-                startActivity(intent)
             }
         }
 
