@@ -5,7 +5,7 @@ import androidx.fragment.app.Fragment
 import androidx.fragment.app.FragmentManager
 import androidx.fragment.app.FragmentStatePagerAdapter
 
-class RecommendAdapter (fm : FragmentManager, private val page_count: Int) : FragmentStatePagerAdapter(fm){
+class RecommendAdapter(fm: FragmentManager, private val page_count: Int) : FragmentStatePagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
         val RecommendFragment = RecommendFragment()
         val bundle = Bundle(page_count)
@@ -15,5 +15,4 @@ class RecommendAdapter (fm : FragmentManager, private val page_count: Int) : Fra
     }
 
     override fun getCount(): Int = page_count
-
 }
