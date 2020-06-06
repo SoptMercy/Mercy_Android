@@ -1,4 +1,5 @@
 package com.mercyteam.mercy.data
 
-class RequestRecommend {
-}
+class RequestRecommend (
+    val symptomIdx :Int
+)
