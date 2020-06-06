@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.HeadFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_head"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/cb_btn_head_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="두통"
+            android:button="@android:color/transparent"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toTopOf="@+id/cb_btn_head_second"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cb_btn_head_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="열"
+            android:button="@android:color/transparent"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toTopOf="@+id/cb_btn_head_third"
+            app:layout_constraintTop_toBottomOf="@+id/cb_btn_head_first" />
+
+        <CheckBox
+            android:id="@+id/cb_btn_head_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="어지러움"
+            android:button="@android:color/transparent"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_btn_head_second"
+            tools:layout_editor_absoluteX="32dp" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>
