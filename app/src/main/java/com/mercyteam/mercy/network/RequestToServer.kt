@@ -1,5 +1,6 @@
 package com.mercyteam.mercy.network
 
+import com.example.semina_3st.network.RequestInterface
 import retrofit2.Retrofit
 import retrofit2.converter.gson.GsonConverterFactory
 
@@ -9,5 +10,7 @@ object RequestToServer {
         .baseUrl(BASE_URL)
         .addConverterFactory(GsonConverterFactory.create())
         .build()
+    
+    val service: RequestInterface = retrofit.create(RequestInterface::class.java)
     //val service: NetworkService = retrofit.create(NetworkService::class.java)
 }
