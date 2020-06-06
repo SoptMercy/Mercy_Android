@@ -4,7 +4,7 @@ data class ResponseRecommend(
     val status : Int,
     val success : Boolean,
     val message : String,
-    val data : DrugData?
+    val data : ArrayList<DrugData>
 )
 
 data class DrugData(
