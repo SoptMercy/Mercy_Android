@@ -1,11 +1,14 @@
 package com.mercyteam.mercy.ui
 
+import android.animation.AnimatorSet
+import android.animation.ObjectAnimator
 import android.graphics.Color
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import com.google.android.material.animation.AnimatorSetCompat.playTogether
 import com.mercyteam.mercy.R
 import kotlinx.android.synthetic.main.fragment_etc.*
 import kotlinx.android.synthetic.main.fragment_respiratory.*
@@ -72,6 +75,17 @@ class RespiratoryFragment : Fragment() {
             else buttonView.setTextColor(resources.getColor(R.color.colorDarkBlack))
         }
 
+
+        val fade = ObjectAnimator.ofFloat(cb_btn_respiratory_first,View.ALPHA,0.3f,1.0f)
+        val fade2 = ObjectAnimator.ofFloat(cb_btn_respiratory_second,View.ALPHA,0.3f,1.0f)
+        val fade3 = ObjectAnimator.ofFloat(cb_btn_respiratory_third,View.ALPHA,0.3f,1.0f)
+        val fade4 = ObjectAnimator.ofFloat(cb_btn_respiratory_fourth,View.ALPHA,0.3f,1.0f)
+        val fade5 = ObjectAnimator.ofFloat(cb_btn_respiratory_fifth,View.ALPHA,0.3f,1.0f)
+        AnimatorSet().run {
+            playTogether(fade,fade2,fade3,fade4,fade5)
+            duration = 2000
+            start()
+        }
     }
 
     companion object {
