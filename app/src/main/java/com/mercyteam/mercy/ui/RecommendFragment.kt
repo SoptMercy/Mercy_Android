@@ -6,6 +6,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.mercyteam.mercy.R
+import kotlinx.android.synthetic.main.fragment_recommend.*
 
 class RecommendFragment : Fragment() {
 
@@ -28,7 +29,7 @@ class RecommendFragment : Fragment() {
     private fun init(){
         when(view_id){
             0 -> {
-
+                tv_name.text = "감기 조심하세요"
             }
             1 -> {
 
