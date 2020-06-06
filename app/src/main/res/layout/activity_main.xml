@@ -30,6 +30,7 @@
             android:text="어느 부위가 아프신가요?"
             android:textColor="@color/colorDarkBlack"
             android:textSize="24sp"
+            android:textStyle="bold"
             app:layout_constraintBottom_toBottomOf="@+id/img_main"
             app:layout_constraintEnd_toEndOf="@+id/img_main"
             app:layout_constraintHorizontal_bias="0.15"
