@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.RespiratoryFragment">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/cl_respiratory"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <CheckBox
+            android:id="@+id/cb_btn_respiratory_first"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="목이 간지러움"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toTopOf="@+id/cb_btn_respiratory_second"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <CheckBox
+            android:id="@+id/cb_btn_respiratory_second"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="기침"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toTopOf="@+id/cb_btn_respiratory_third"
+            app:layout_constraintTop_toBottomOf="@+id/cb_btn_respiratory_first" />
+
+        <CheckBox
+            android:id="@+id/cb_btn_respiratory_third"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="콧물"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toTopOf="@+id/cb_btn_respiratory_fourth"
+            app:layout_constraintTop_toBottomOf="@+id/cb_btn_respiratory_second" />
+
+        <CheckBox
+            android:id="@+id/cb_btn_respiratory_fourth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="코막힘"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toTopOf="@+id/cb_btn_respiratory_fifth"
+            app:layout_constraintTop_toBottomOf="@+id/cb_btn_respiratory_third" />
+
+        <CheckBox
+            android:id="@+id/cb_btn_respiratory_fifth"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/grey_round_background"
+            android:button="@android:color/transparent"
+            android:gravity="center"
+            android:paddingVertical="13dp"
+            android:text="재채기"
+            android:textColor="@color/colorDarkBlack"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/cb_btn_respiratory_fourth" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</FrameLayout>

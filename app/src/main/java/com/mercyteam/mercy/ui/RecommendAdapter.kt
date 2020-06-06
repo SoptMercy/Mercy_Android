@@ -7,11 +7,11 @@ import androidx.fragment.app.FragmentStatePagerAdapter
 
 class RecommendAdapter(fm: FragmentManager, private val page_count: Int) : FragmentStatePagerAdapter(fm){
     override fun getItem(position: Int): Fragment {
-        val RecommendFragment = RecommendFragment()
+        val recommendFragment = RecommendFragment()
         val bundle = Bundle(page_count)
         bundle.putInt("id",position)
-        RecommendFragment.arguments = bundle
-        return RecommendFragment
+        recommendFragment.arguments = bundle
+        return recommendFragment
     }
 
     override fun getCount(): Int = page_count
