@@ -76,11 +76,11 @@ class RespiratoryFragment : Fragment() {
         }
 
 
-        val fade = ObjectAnimator.ofFloat(cb_btn_respiratory_first,View.ALPHA,0.3f,1.0f)
-        val fade2 = ObjectAnimator.ofFloat(cb_btn_respiratory_second,View.ALPHA,0.3f,1.0f)
-        val fade3 = ObjectAnimator.ofFloat(cb_btn_respiratory_third,View.ALPHA,0.3f,1.0f)
-        val fade4 = ObjectAnimator.ofFloat(cb_btn_respiratory_fourth,View.ALPHA,0.3f,1.0f)
-        val fade5 = ObjectAnimator.ofFloat(cb_btn_respiratory_fifth,View.ALPHA,0.3f,1.0f)
+        val fade = ObjectAnimator.ofFloat(cb_btn_respiratory_first,View.TRANSLATION_Y,400f,0f)
+        val fade2 = ObjectAnimator.ofFloat(cb_btn_respiratory_second,View.TRANSLATION_Y,500f,0f)
+        val fade3 = ObjectAnimator.ofFloat(cb_btn_respiratory_third,View.TRANSLATION_Y,600f,0f)
+        val fade4 = ObjectAnimator.ofFloat(cb_btn_respiratory_fourth,View.TRANSLATION_Y,700f,0f)
+        val fade5 = ObjectAnimator.ofFloat(cb_btn_respiratory_fifth,View.TRANSLATION_Y,800f,0f)
         AnimatorSet().run {
             playTogether(fade,fade2,fade3,fade4,fade5)
             duration = 2000
