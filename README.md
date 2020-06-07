@@ -17,6 +17,10 @@
 
 ## 3-2. fragment
 하나의 액티비티에서 여러 상황을 연출
+
+<img width="358" alt="스크린샷 2020-06-07 오전 10 39 26" src="https://user-images.githubusercontent.com/37995236/83958323-34630500-a8ab-11ea-9078-79ce19b34efd.png">
+<img width="359" alt="스크린샷 2020-06-07 오전 10 39 15" src="https://user-images.githubusercontent.com/37995236/83958325-375df580-a8ab-11ea-8fa4-a2f8379111d8.png">
+
 1️⃣ xml 작성 -> 반복될 뷰
 ```
 <FrameLayout
@@ -56,6 +60,9 @@ fragmentTransaction.commit()
 사용자의 가로 스크롤 동작 따른 서비스 동작 분기 및 직관적인 스크롤 연출
 
 정리 내용 -> [개인 정리 참고](https://github.com/Yanghyesun/AndroidArticle)
+
+<img width="360" alt="스크린샷 2020-06-07 오전 10 37 56" src="https://user-images.githubusercontent.com/37995236/83958303-0c73a180-a8ab-11ea-9576-130a082ddb3e.png">
+
 
 ➡️ __View Pager & Tablayout__ 을 이용해서 구현❗️
 
@@ -202,6 +209,9 @@ tl_home.setupWithViewPager(vp_home)
 
 ## 3-5. animation
 애니메이션을 효과를 넣어서 아래->위로 샤라락 되는 효과 적용
+
+![Jun-07-2020 10-34-44](https://user-images.githubusercontent.com/37995236/83958245-9838fe00-a8aa-11ea-82cf-8f218c828aa4.gif)
+
 ```
 val fade = ObjectAnimator.ofFloat(cb_btn_respiratory_first,View.TRANSLATION_Y,400f,0f)
 val fade2 = ObjectAnimator.ofFloat(cb_btn_respiratory_second,View.TRANSLATION_Y,500f,0f)
@@ -214,6 +224,8 @@ AnimatorSet().run {
     start()
 }
 ```
+
+
 
 ## 3-6. retrofit 통신
 
